@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>go fk urself</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css"/>
+    <script src="js/angular.js"></script>
+    <script src="js/ngDraggable.js"></script>
+    <script src="frontend.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  </head>
+  <body ng-app="chessapp">
+    <div ng-controller='board'>
+      <button ng-click='getAll()'>Click dis</button>
+      <table>
+        <tr ng-repeat='row in board'>
+          <td ng-repeat='grid in row' ng-class="{grideven: (grid.row+grid.column)%2===0 ,gridodd: (grid.row+grid.column)%2===1}" ng-drop="true" ng-drag-move='true' ng-drop-success="onDropComplete($data,$event)">
+            <div ng-class="{blackPawn: grid.team==='Black'&&grid.type==='Pawn',whitePawn: grid.team==='White'&&grid.type==='Pawn', blackRook: grid.team==='Black'&&grid.type==='Rook',whiteRook: grid.team==='White'&&grid.type==='Rook', blackBishop: grid.team==='Black'&&grid.type==='Bishop',whiteBishop: grid.team==='White'&&grid.type==='Bishop', blackKnight: grid.team==='Black'&&grid.type==='Knight',whiteKnight: grid.team==='White'&&grid.type==='Knight', blackQueen: grid.team==='Black'&&grid.type==='Queen',whiteQueen: grid.team==='White'&&grid.type==='Queen', blackKing: grid.team==='Black'&&grid.type==='King',whiteKing: grid.team==='White'&&grid.type==='King'}" ng-drag="true" ng-drag-data='[grid.piece, grid.team, grid.type, this]'></div>
+          </td>
+      </tr>
+    </table>
+      </div>
+    </div>
+  </body>  
+</html>

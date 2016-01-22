@@ -1,0 +1,109 @@
+.grideven {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	border: 1px solid;
+}
+
+.gridodd {
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	border: 1px solid;
+}
+
+.blackPawn {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_black_pawn.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.whitePawn {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_white_pawn.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.blackRook {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_black_rook.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.whiteRook {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_white_rook.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.blackBishop {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_black_bishop.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.whiteBishop {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_white_bishop.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.blackKnight {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_black_knight.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.whiteKnight {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_white_knight.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.blackQueen {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_black_queen.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.whiteQueen {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_white_queen.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.blackKing {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_black_king.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.whiteKing {
+	width: 45px;
+	height: 45px;
+	background-image: url("/images/chess_piece_white_king.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
