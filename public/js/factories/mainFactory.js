@@ -271,7 +271,6 @@ app.factory('mainFactory',function($http){
 											break;
 										}
 									}
-									console.log('fuck up some commas ',blocked);
 								}
 
 								//Southeast next
@@ -469,7 +468,7 @@ app.factory('mainFactory',function($http){
 						}
 					}
 
-					//and finally KING OF PHILLY..KOP!!!!
+					//and finally THE KING
 					else if(movedPieceType === 'King')
 					{
 						if(existingTeamOnLandLoc !== movedPieceTeam)
