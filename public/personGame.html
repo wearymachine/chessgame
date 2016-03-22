@@ -1,0 +1,8 @@
+<button ng-click='getAll()'>Click to activate board</button>
+      <table>
+        <tr ng-repeat='row in board'>
+          <td ng-repeat='grid in row' ng-class="{grideven: (grid.row+grid.column)%2===0 ,gridodd: (grid.row+grid.column)%2===1}" ng-drop="true" ng-drag-move='true' ng-drop-success="onDropComplete($data,$event)">
+            <div ng-class="{blackPawn: grid.team==='Black'&&grid.type==='Pawn',whitePawn: grid.team==='White'&&grid.type==='Pawn', blackRook: grid.team==='Black'&&grid.type==='Rook',whiteRook: grid.team==='White'&&grid.type==='Rook', blackBishop: grid.team==='Black'&&grid.type==='Bishop',whiteBishop: grid.team==='White'&&grid.type==='Bishop', blackKnight: grid.team==='Black'&&grid.type==='Knight',whiteKnight: grid.team==='White'&&grid.type==='Knight', blackQueen: grid.team==='Black'&&grid.type==='Queen',whiteQueen: grid.team==='White'&&grid.type==='Queen', blackKing: grid.team==='Black'&&grid.type==='King',whiteKing: grid.team==='White'&&grid.type==='King'}" ng-drag="true" ng-drag-data='[grid.piece, grid.team, grid.type, this]'></div>
+          </td>
+      </tr>
+    </table>
