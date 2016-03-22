@@ -7,24 +7,21 @@
     <script src="js/angular.js"></script>
     <script src="js/ngDraggable.js"></script>
     <script src="js/angular-ui-router.js"></script>
-    <script src="frontend.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/factories/mainFactory.js"></script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="js/factories/mainFactory.js"></script>
   </head>
   <body ng-app="chessapp">
     <div ng-controller='board'>
-      <button ui-sref='person'>To play another human</button>
-      <button ui-sref='comp'>Click to play the machine</button>
-      <div ui-view></div>
-      <!-- <!-- <button ng-click='getAll()'>Click here for two people sitting at one comp type of game</button> -->
-     <!--  <table>
+      <button ng-click='getAll()'>Click to play another person</button>
+      <table>
         <tr ng-repeat='row in board'>
           <td ng-repeat='grid in row' ng-class="{grideven: (grid.row+grid.column)%2===0 ,gridodd: (grid.row+grid.column)%2===1}" ng-drop="true" ng-drag-move='true' ng-drop-success="onDropComplete($data,$event)">
             <div ng-class="{blackPawn: grid.team==='Black'&&grid.type==='Pawn',whitePawn: grid.team==='White'&&grid.type==='Pawn', blackRook: grid.team==='Black'&&grid.type==='Rook',whiteRook: grid.team==='White'&&grid.type==='Rook', blackBishop: grid.team==='Black'&&grid.type==='Bishop',whiteBishop: grid.team==='White'&&grid.type==='Bishop', blackKnight: grid.team==='Black'&&grid.type==='Knight',whiteKnight: grid.team==='White'&&grid.type==='Knight', blackQueen: grid.team==='Black'&&grid.type==='Queen',whiteQueen: grid.team==='White'&&grid.type==='Queen', blackKing: grid.team==='Black'&&grid.type==='King',whiteKing: grid.team==='White'&&grid.type==='King'}" ng-drag="true" ng-drag-data='[grid.piece, grid.team, grid.type, this]'></div>
           </td>
       </tr>
-    </table> -->
+    </table>
       </div>
     </div>
   </body>  
